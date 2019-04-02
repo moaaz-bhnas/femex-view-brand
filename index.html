@@ -9,20 +9,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <title>Theme</title>
-
-    <style>
-      ul {
-        padding-left: 0;
-        list-style: none;
-      }
-    </style>
   </head>
   <body class="body-text">
     <nav class="navbar navbar-expand-lg navbar-light py-3">
       <div class="container">
-        <a href="#" class="navbar-brand text-uppercase mr-5">Femex</a>
+        <a href="#" class="navbar-brand text-uppercase mr-5">
+          <img src="images/logo.png" alt="femex logo">
+        </a> <!-- logo -->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -45,33 +41,41 @@
           </ul> <!-- navigation list -->
 
           <form action="" class="form-inline mx-lg-auto my-3 my-lg-0">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1">
-                      <i class="fas fa-search"></i>
-                  </span>
-              </div>
-              <input type="search" placeholder="Search..." class="form-control" aria-label="Search through site content">
+            <div class="d-flex align-items-center">
+              <img class="mr-3" src="images/glass.png" alt="" width="22">
+              <input type="search" placeholder="Search..." class="header__searchInput" aria-label="Search through site content">
             </div>
           </form> <!-- Search form -->
 
-          <span class="navbar-text">
-            <i class="fas fa-shopping-cart fa-lg mr-3"></i>
-            <i class="far fa-user fa-lg"></i>
-          </span> <!-- cart/user list -->
+          <div class="d-flex align-items-center">
+            <img class="mr-4" src="images/cart.png" alt="Cart" width="27">
+            <img src="images/user.png" alt="User" width="27">
+          </div> <!-- cart/user list -->
         </div> <!-- navbar collapse -->
       </div> <!-- container -->
     </nav> <!-- main navigation -->
 
-    <nav class="bg-dark" aria-label="breadcrumb">
-      <div class="container">
-        <ol class="breadcrumb bg-dark py-3 mb-0 d-flex justify-content-end align-items-center">
-          <il class="breadcrumb-item"><a class="text-white" href="#">Home</a></il>
-          <il class="breadcrumb-item"><a class="text-white" href="#">Brands</a></il>
-          <il class="breadcrumb-item"><a class="text-white" href="#">Le Collezioni</a></il>
-        </ol> <!-- breadcrumb list -->
-      </div> <!-- container -->
-    </nav>
+    <div class="breadcrumbBar py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <a href="#">
+            <img src="images/left-arrow.png" alt="Left arrow">
+          </a>
+          <img class="mx-4" src="images/logo-2.png" alt="Logo">
+          <a href="#" class="rounded-circle p-4 breadcrumbBar__downArrowContainer position-relative d-flex justify-content-center align-items-center">
+            <img class="breadcrumbBar__downArrow position-absolute" src="images/down-arrow.png" alt="Down arrow">
+          </a>
+        </div>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0">
+            <il class="breadcrumb-item"><a class="text-white" href="#">Home</a></il>
+            <il class="breadcrumb-item"><a class="text-white" href="#">Brands</a></il>
+            <il class="breadcrumb-item"><a class="text-white" href="#">Le Collezioni</a></il>
+          </ol> <!-- breadcrumb list -->
+        </nav>
+      </div>
+    </div>
 
     <div class="jumbotron text-center text-uppercase">
       <h1 class="font-weight-light">Femex New Experience</h1>
@@ -203,7 +207,7 @@
       </div> <!-- "explore more" link -->
     </section> <!-- products section -->
 
-    <section class="bg-dark text-white pt-3">
+    <section class="bg-dark text-white pt-3 mb-0">
       <div class="container">
         <ul class="row">
           <li class="col-sm-6 col-lg-3 mb-4">
@@ -240,19 +244,46 @@
             </div>
           </li>
           <li class="col-sm-6 col-lg-3 mb-4">
-              <div class="row align-items-center justify-content-center"> <!-- nested row -->
-                <div class="col-2 col-sm-3 col-md-2 col-lg-3 p-2 rounded-circle bg-white">
-                  <img src="images/free-delivery.png" alt="" class="img-fluid">
-                </div> <!-- image -->
-                <div class="col-6 col-sm-9 col-md-7 col-lg-9">
-                  <p class="test-uppercase mb-2">Free shipping</p>
-                  <p class="mb-0">While not exactly line</p>
-                </div> <!-- text -->
-              </div>
-            </li>
+            <div class="row align-items-center justify-content-center"> <!-- nested row -->
+              <div class="col-2 col-sm-3 col-md-2 col-lg-3 p-2 rounded-circle bg-white">
+                <img src="images/free-delivery.png" alt="" class="img-fluid">
+              </div> <!-- image -->
+              <div class="col-6 col-sm-9 col-md-7 col-lg-9">
+                <p class="test-uppercase mb-2">Free shipping</p>
+                <p class="mb-0">While not exactly line</p>
+              </div> <!-- text -->
+            </div>
+          </li>
         </ul>
       </div>
     </section>
+
+    <footer class="bg-dark py-5 text-white">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <span class="text-uppercase display-4">Femex</span>
+            <p class="my-3">
+              Et porro similique et odio dolores nihil. Voluptas numquam a eaque numquam. Qui numquam enim vel tenetur commodi voluptatum temporibus. Qui iste mollitia perspiciatis.
+            </p>
+            <p><small>
+              Powered by <span class="text-info">NasOrg</span>
+            </small></p>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <form class="d-flex flex-column">
+              <p class="font-weight-bold">
+                Subscribe to our newsletter
+              </p>
+              <input type="email" class="form-control" aria-label="your email" placeholder="Enter Your E-mail">
+              <button type="submit" class="btn text-uppercase text-white px-0 mt-2 align-self-end"><u>Subscribe</u></button>
+              <p>Payment Methods</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,0 +1,35 @@
+/* Colors
+- cart image: 23272D
+- body text: 24282D
+- breadcrumb bar background color: 23282D
+- down arrow background: 15171a
+*/
+
+body {
+  color: #24282D;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* ===================================
+Header
+====================================== */
+.header__searchInput {
+  border: none;
+}
+
+/* ===================================
+Breadcrumb
+====================================== */
+.breadcrumbBar {
+  background-color: #23282D;
+}
+
+/* Down arrow */
+.breadcrumbBar__downArrowContainer {
+  background-color: #15171a;
+}
