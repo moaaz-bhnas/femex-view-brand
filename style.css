@@ -3,6 +3,7 @@
 - body text: 24282D
 - breadcrumb bar background color: 23282D
 - down arrow background: 15171a
+- jumbotron background: 15171a
 */
 
 body {
@@ -32,4 +33,20 @@ Breadcrumb
 /* Down arrow */
 .breadcrumbBar__downArrowContainer {
   background-color: #15171a;
+}
+
+/* ===================================
+Jumbotron
+====================================== */
+.jumbotron {
+  background-color: #15171a;
+}
+
+.jumbotron__title {
+  font-size: 1.2rem;
+  letter-spacing: 1rem;
+}
+
+.jumbotron__paragraph {
+  font-size: 2.4rem;
 }

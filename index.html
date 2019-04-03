@@ -16,7 +16,7 @@
   <body class="body-text">
     <nav class="navbar navbar-expand-lg navbar-light py-3">
       <div class="container">
-        <a href="#" class="navbar-brand text-uppercase mr-5">
+        <a href="#" class="navbar-brand mr-5">
           <img src="images/logo.png" alt="femex logo">
         </a> <!-- logo -->
 
@@ -25,7 +25,7 @@
         </button> <!-- menu icon -->
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav pl-2 pl-lg-0">
             <li class="nav-item">
               <a href="#" class="nav-link px-lg-4">New arrivals</a>
             </li>
@@ -40,7 +40,7 @@
             </li>
           </ul> <!-- navigation list -->
 
-          <form action="" class="form-inline mx-lg-auto my-3 my-lg-0">
+          <form action="" class="form-inline mx-lg-auto my-3 my-lg-0 pl-2 pl-lg-0">
             <div class="d-flex align-items-center">
               <img class="mr-3" src="images/glass.png" alt="" width="22">
               <input type="search" placeholder="Search..." class="header__searchInput" aria-label="Search through site content">
@@ -48,24 +48,28 @@
           </form> <!-- Search form -->
 
           <div class="d-flex align-items-center">
-            <img class="mr-4" src="images/cart.png" alt="Cart" width="27">
-            <img src="images/user.png" alt="User" width="27">
+            <a class="p-2" href="#">
+              <img src="images/cart.png" alt="Cart" width="27">
+            </a>
+            <a class="p-2" href="#">
+              <img src="images/user.png" alt="User" width="27">
+            </a>
           </div> <!-- cart/user list -->
         </div> <!-- navbar collapse -->
       </div> <!-- container -->
     </nav> <!-- main navigation -->
 
     <div class="breadcrumbBar py-3">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-          <a href="#">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="d-flex align-items-center mb-3  mb-md-0">
+          <a class="p-3" href="#">
             <img src="images/left-arrow.png" alt="Left arrow">
           </a>
-          <img class="mx-4" src="images/logo-2.png" alt="Logo">
+          <img class="mr-4 ml-3" src="images/logo-2.png" alt="Logo">
           <a href="#" class="rounded-circle p-4 breadcrumbBar__downArrowContainer position-relative d-flex justify-content-center align-items-center">
             <img class="breadcrumbBar__downArrow position-absolute" src="images/down-arrow.png" alt="Down arrow">
           </a>
-        </div>
+        </div> <!-- left -->
 
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0">
@@ -73,13 +77,13 @@
             <il class="breadcrumb-item"><a class="text-white" href="#">Brands</a></il>
             <il class="breadcrumb-item"><a class="text-white" href="#">Le Collezioni</a></il>
           </ol> <!-- breadcrumb list -->
-        </nav>
-      </div>
+        </nav> <!-- right -->
+      </div> <!-- container -->
     </div>
 
-    <div class="jumbotron text-center text-uppercase">
-      <h1 class="font-weight-light">Femex New Experience</h1>
-      <p class="lead">360-degree shopping experience</p>
+    <div class="jumbotron jumbotron-fluid text-center text-uppercase text-white">
+      <h1 class="jumbotron__title font-weight-light">Femex New Experience</h1>
+      <p class="jumbotron__paragraph font-weight-bold">360-degree shopping experience</p>
     </div> <!-- jumbotron -->
 
     <section class="container pb-5">
