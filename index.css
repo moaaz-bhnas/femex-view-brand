@@ -201,47 +201,122 @@ Jumbotron
   box-shadow: 0 0 20px rgba(0, 0, 0, .5);
   max-height: 35rem;
   object-fit: cover;
+  object-position: 50% 100%;
 }
 
 /* 360 controls */
-.panoramaControl {
-  padding: 1.7rem;
-  border: 2px solid;
-  background-color: rgba(0, 0, 0, .7);
-
-  transition-property: border-color, background-color;
-  transition-duration: .3s;
+.panoramaControl,
+.shopToolList__tool {
+  transition-duration: .25s;
 }
+
+.panoramaControl {
+  padding: 1.38rem;
+  border: 2px solid rgba(255, 255, 255, .2);
+  background-color: rgba(0, 0, 0, .8);
+  transition-property: border-color, background-color;
+}
+@media screen and (min-width: 768px) {
+  .panoramaControl {
+    padding: 1.7rem;
+  }
+}
+
+.shopToolList__tool {
+  padding: 1.5rem;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition-property: background-color;
+}
+.shopToolList__tool:hover,
+.shopToolList__tool:focus {
+  background-color: #000;
+}
+
 .panoramaControl:hover,
 .panoramaControl:focus {
-  border-color: rgba(255, 255, 255, .5);
+  border-color: rgba(255, 255, 255, .6);
   background-color: rgba(0, 0, 0, .9);
 }
 
 /* settings */
 .bannerContainer__settingsControl {
-  top: calc(2rem + 5%);
-  left: 5%;
+  left: 2rem;
+  top: 3rem;
 }
 
 /* cart */
 .bannerContainer__cartControl {
-  top: calc(2rem + 5%);
-  right: 5%;
+  right: 2rem;
+  top: 3rem;
 }
 
 /* share */
 .bannerContainer__shareControl {
-  bottom: calc(-2rem + 5%);
-  right: 5%;
+  right: 2rem;
+  bottom: -1rem;  
 }
 
-/* modifiers */
-.panoramaControl__borderColor_transparent {
-  border-color: rgba(255, 255, 255, .2);
+/* zoom in */
+.bannerContainer__zoomInControl {
+  left: 2rem;
+  bottom: -1rem;  
 }
-.panoramaControl__borderColor_opaque {
-  border-color: #fff;
+
+/* zoom out */
+.bannerContainer__zoomOutControl {
+  left: 5.5rem;
+  bottom: -1rem;  
+}
+@media screen and (min-width: 768px) {
+  .bannerContainer__zoomOutControl {
+    left: 6.5rem;
+  }
+}
+
+/* full screen */
+.bannerContainer__fullScreenControl {
+  left: 9rem;
+  bottom: -1rem;  
+}
+@media screen and (min-width: 768px) {
+  .bannerContainer__fullScreenControl {
+    left: 11rem;
+  }
+}
+
+/* shop details */
+.shopDetails {
+  width: 19rem;
+  background-color: rgba(0, 0, 0, .8);
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: .4rem;
+}
+.bannerContainer__shopDetails {
+  left: 2rem;
+  top: 8rem;
+}
+
+/* location */
+.shopDetails__location {
+  font-size: .9rem;
+}
+
+/* title */
+.shopDetails__title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: .7rem;
+}
+
+/* working hours */
+.shopDetails__workingHours {
+  font-size: .9rem;
+}
+
+/* shop details */
+.shopDetails__toolsTitle {
+  font-size: 1.3rem;
 }
 
 /* ===================================

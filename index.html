@@ -78,25 +78,67 @@
       </div> <!-- container -->
     </div> <!-- breadcrumbbar -->
 
-    <div class="jumbotron jumbotron-fluid text-center text-uppercase text-white position-relative mb-5 pb-0">
+    <div class="jumbotron jumbotron-fluid text-white position-relative mb-5 pb-0">
       <img src="img/360-badge.png" alt="360 view" class="jumbotron__360badge position-absolute d-none d-sm-block">
-      <h1 class="jumbotron__title font-weight-light position-relative">Femex New Experience</h1>
-      <p class="jumbotron__paragraph font-weight-bold position-relative">360-degree shopping experience</p>
+      <h1 class="jumbotron__title font-weight-light position-relative text-uppercase text-center">Femex New Experience</h1>
+      <p class="jumbotron__paragraph font-weight-bold position-relative text-uppercase text-center">360-degree shopping experience</p>
       <div class="container bannerContainer position-relative">
         <img src="img/banner.png" alt="image for a clothing store" class="w-100 bannerContainer__banner position-relative rounded">
-        <button class="panoramaControl bannerContainer__settingsControl panoramaControl__borderColor_transparent d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="change settings">
+        <button class="panoramaControl bannerContainer__settingsControl d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="change settings">
           <i aria-hidden="true" class="fas fa-cog fa-lg position-absolute text-white"></i>
         </button>
-        <button class="panoramaControl bannerContainer__cartControl panoramaControl__borderColor_transparent d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="shopping cart">
+        <button class="panoramaControl bannerContainer__cartControl d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="shopping cart">
           <i aria-hidden="true" class="fas fa-shopping-cart fa-lg position-absolute text-white"></i>
         </button>
-        <button class="panoramaControl bannerContainer__shareControl panoramaControl__borderColor_transparent d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="share">
+        <button class="panoramaControl bannerContainer__zoomInControl d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="Zoom in">
+          <i aria-hidden="true" class="fas fa-search-plus fa-lg position-absolute text-white"></i>
+        </button>
+        <button class="panoramaControl bannerContainer__zoomOutControl d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="Zoom out">
+          <i aria-hidden="true" class="fas fa-search-minus fa-lg position-absolute text-white"></i>
+        </button>
+        <button class="panoramaControl bannerContainer__fullScreenControl d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="full screen">
+          <i aria-hidden="true" class="fas fa-arrows-alt fa-lg position-absolute text-white"></i>
+        </button>
+        <button class="panoramaControl bannerContainer__shareControl d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="share">
           <i aria-hidden="true" class="fas fa-share-alt fa-lg position-absolute text-white"></i>
         </button>
-        <!-- <button class="panoramaControl bannerContainer__zoomInControl panoramaControl__borderColor_transparent d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="Zoom in">
-          <i aria-hidden="true" class="fas fa-share-alt fa-lg position-absolute text-white"></i>
-        </button> -->
-      </div>
+
+        <div class="shopDetails bannerContainer__shopDetails p-3 text-white position-absolute d-none d-md-block">
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="img/logo-2.png" alt="Shop logo" class="shopDetails__logo"> <!-- logo -->
+            <p class="shopDetails__location mb-0">
+              Floor Number 1
+            </p> <!-- location -->
+          </div>
+          <h2 class="shopDetails__title mb-0">
+            <span class="text-uppercase">Le Collezioni</span> Entrance
+          </h2> <!-- place in the 360 -->
+          <p class="shopDetails__workingHours">
+            open <time datetime="12:30">12:30PM</time> - closed <time datetime="00:30">12:30AM</time>
+          </p> <!-- working hours -->
+          <h3 class="shopDetails__toolsTitle">Shop Tools</h3>
+          <ul class="shopToolList d-flex justify-content-between mt-3">
+            <li class="text-center">
+              <button class="shopToolList__tool d-flex rounded-circle justify-content-center align-items-center">
+                  <i aria-hidden="true" class="fas fa-search fa-lg position-absolute text-white"></i>
+              </button>
+              Search
+            </li>
+            <li class="text-center">
+              <button class="shopToolList__tool d-flex rounded-circle justify-content-center align-items-center">
+                  <i aria-hidden="true" class="fas fa-dice-six fa-lg position-absolute text-white"></i>
+              </button>
+              Sections
+            </li>
+            <li class="text-center">
+              <button class="shopToolList__tool d-flex rounded-circle justify-content-center align-items-center">
+                  <i aria-hidden="true" class="far fa-building fa-lg position-absolute text-white"></i>
+              </button>
+              Floor
+            </li>
+          </ul>
+        </div> <!-- shop details -->
+      </div> <!-- container -->
     </div> <!-- jumbotron -->
 
     <section class="container py-5">
