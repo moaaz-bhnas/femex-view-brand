@@ -9,68 +9,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 
     <title>Theme</title>
   </head>
-  <body class="body-text">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
-        <a href="#" class="navbar-brand mr-5">
-          <img src="images/logo.png" alt="femex logo">
+        <a class="navbar-brand mr-lg-5" href="#">
+          <img src="img/logo.png" alt="Femex logo">
         </a> <!-- logo -->
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> <!-- menu icon -->
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav pl-2 pl-lg-0">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-lg-4">New arrivals</a>
+      
+        <div class="collapse navbar-collapse" id="collapse">
+          <ul class="navbar-nav mr-auto pl-2 pl-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link px-lg-4" href="#">New Arrivals<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-lg-4">Women</a>
+              <a class="nav-link px-lg-4" href="#">Women</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link px-lg-4" href="#">Men</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-lg-4">Men</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-lg-4">Kids</a>
+              <a class="nav-link px-lg-4" href="#">Kids</a>
             </li>
           </ul> <!-- navigation list -->
-
-          <form action="" class="form-inline mx-lg-auto my-3 my-lg-0 pl-2 pl-lg-0">
-            <div class="d-flex align-items-center">
-              <img class="mr-3" src="images/glass.png" alt="" width="22">
-              <input type="search" placeholder="Search..." class="header__searchInput" aria-label="Search through site content">
-            </div>
-          </form> <!-- Search form -->
-
-          <div class="d-flex align-items-center">
-            <a class="p-2" href="#">
-              <img src="images/cart.png" alt="Cart" width="27">
+          <form class="form-inline my-2 my-lg-0 mx-auto">
+            <label class="p-2 mr-2" for="navbar__searchInput">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </label>
+            <input class="navbar__searchInput" id="navbar__searchInput" type="search" placeholder="Search..." aria-label="Search">
+          </form> <!-- search form -->
+          <span class="navbar-text d-flex">
+            <a href="#" class="p-2 navbar__userLink">
+              <i class="navbar__cartIcon fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
             </a>
-            <a class="p-2" href="#">
-              <img src="images/user.png" alt="User" width="27">
+            <a href="#" class="p-2 navbar__userLink">
+              <i class="navbar__userIcon fas fa-user fa-lg" aria-hidden="true"></i>
             </a>
-          </div> <!-- cart/user list -->
-        </div> <!-- navbar collapse -->
+          </span>
+        </div> <!-- collapse -->
       </div> <!-- container -->
-    </nav> <!-- main navigation -->
-
+    </nav> <!-- navbar -->
+  
     <div class="breadcrumbBar py-3 position-relative">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div class="d-flex align-items-center mb-3  mb-md-0">
-          <a class="p-3" href="#">
-            <img src="images/left-arrow.png" alt="Left arrow">
+          <a href="#" class="breadcrumbBar__leftArrowLink p-3 text-white" aria-label="left arrow">
+            <i class="fas fa-chevron-left fa-lg" aria-hidden="true"></i>
           </a>
-          <img class="mr-4 ml-3" src="images/logo-2.png" alt="Logo">
-          <a href="#" class="rounded-circle p-4 breadcrumbBar__downArrowContainer position-relative d-flex justify-content-center align-items-center">
-            <img class="breadcrumbBar__downArrow position-absolute" src="images/down-arrow.png" alt="Down arrow">
+          <img class="mr-4 ml-3" src="img/logo-2.png" alt="Logo">
+          <a href="#" class="rounded-circle p-4 breadcrumbBar__downArrowLink d-flex justify-content-center align-items-center text-white link_decorationOnHover_none">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </a>
         </div> <!-- left -->
-
+  
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0">
             <il class="breadcrumb-item"><a class="text-white" href="#">Home</a></il>
@@ -79,21 +76,33 @@
           </ol> <!-- breadcrumb list -->
         </nav> <!-- right -->
       </div> <!-- container -->
-    </div>
+    </div> <!-- breadcrumbbar -->
 
-    <div class="jumbotron jumbotron-fluid text-center text-uppercase text-white position-relative mb-5">
-      <img src="images/360-badge.png" alt="360 view" class="jumbotron__360badge position-absolute">
+    <div class="jumbotron jumbotron-fluid text-center text-uppercase text-white position-relative mb-5 pb-0">
+      <img src="img/360-badge.png" alt="360 view" class="jumbotron__360badge position-absolute d-none d-sm-block">
       <h1 class="jumbotron__title font-weight-light position-relative">Femex New Experience</h1>
       <p class="jumbotron__paragraph font-weight-bold position-relative">360-degree shopping experience</p>
-      <div class="container">
-        <img src="images/banner.png" alt="image for a clothing store" class="img-fluid jumbotron__banner position-relative rounded">
+      <div class="container bannerContainer position-relative">
+        <img src="img/banner.png" alt="image for a clothing store" class="w-100 bannerContainer__banner position-relative rounded">
+        <button class="panoramaControl bannerContainer__settingsControl panoramaControl__borderColor_transparent d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="change settings">
+          <i aria-hidden="true" class="fas fa-cog fa-lg position-absolute text-white"></i>
+        </button>
+        <button class="panoramaControl bannerContainer__cartControl panoramaControl__borderColor_transparent d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="shopping cart">
+          <i aria-hidden="true" class="fas fa-shopping-cart fa-lg position-absolute text-white"></i>
+        </button>
+        <button class="panoramaControl bannerContainer__shareControl panoramaControl__borderColor_transparent d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="share">
+          <i aria-hidden="true" class="fas fa-share-alt fa-lg position-absolute text-white"></i>
+        </button>
+        <!-- <button class="panoramaControl bannerContainer__zoomInControl panoramaControl__borderColor_transparent d-flex position-absolute rounded-circle justify-content-center align-items-center" aria-label="Zoom in">
+          <i aria-hidden="true" class="fas fa-share-alt fa-lg position-absolute text-white"></i>
+        </button> -->
       </div>
     </div> <!-- jumbotron -->
 
     <section class="container py-5">
       <div class="row align-items-center justify-content-center">
         <div class="col-4 col-md-3 col-lg-2 mb-3 mb-md-0">
-          <img class="img-fluid" src="images/logo.png" alt="Logo">
+          <img class="img-fluid" src="img/logo.png" alt="Logo">
         </div> <!-- logo -->
         <div class="col-12 col-md-8 col-xl-7 mx-md-auto">
           <form>
@@ -136,73 +145,73 @@
       </div> <!-- filter form -->
       <ul class="row justify-content-center mt-5 gallery">
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-1.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-1.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-2.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-2.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-3.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-3.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-4.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-4.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-1.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-1.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-2.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-2.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-3.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-3.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-4.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-4.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-5.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-5.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-6.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-6.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-7.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-7.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
         </li>
         <li class="gallery__item col-8 col-sm-6 col-md-3 mb-4">
-          <img src="images/gallery-8.png" alt="Gallery image" class="gallery__image mb-2">
+          <img src="img/gallery-8.png" alt="Gallery image" class="gallery__image mb-2">
           <span>Le Collezioni</span>
           <h3 class="font-weight-light">Cadapetra Hoodie</h3>
           <span>99.95$</span>
@@ -214,6 +223,84 @@
         </div>
       </div> <!-- "explore more" link -->
     </section> <!-- products section -->
+
+    <section class="featureSection pt-3 mb-0">
+      <div class="container">
+        <ul class="row">
+          <li class="col-sm-6 col-lg-3 mb-4">
+            <div class="row align-items-center justify-content-center"> <!-- nested row -->
+              <div class="d-flex feature__iconContainer rounded-circle bg-white">
+                <i class="fas fa-shipping-fast fa-lg m-auto" aria-hidden="true"></i>
+              </div> <!-- image -->
+              <div class="col-6 col-sm-9 col-md-7 col-lg-9 text-white">
+                <p class="text-uppercase mb-2">Free shipping</p>
+                <p class="mb-0">While not exactly line</p>
+              </div> <!-- text -->
+            </div>
+          </li>
+          <li class="col-sm-6 col-lg-3 mb-4">
+              <div class="row align-items-center justify-content-center"> <!-- nested row -->
+                <div class="d-flex feature__iconContainer rounded-circle bg-white">
+                  <i class="fas fa-dollar-sign fa-lg m-auto" aria-hidden="true"></i>
+                </div> <!-- image -->
+                <div class="col-6 col-sm-9 col-md-7 col-lg-9 text-white">
+                  <p class="text-uppercase mb-2">Save 50% up</p>
+                  <p class="mb-0">While not exactly line</p>
+                </div> <!-- text -->
+              </div>
+            </li>
+            <li class="col-sm-6 col-lg-3 mb-4">
+            <div class="row align-items-center justify-content-center"> <!-- nested row -->
+              <div class="d-flex feature__iconContainer rounded-circle bg-white">
+                <i class="fas fa-credit-card fa-lg m-auto" aria-hidden="true"></i>
+              </div> <!-- image -->
+              <div class="col-6 col-sm-9 col-md-7 col-lg-9 text-white">
+                <p class="text-uppercase mb-2">Online pay</p>
+                <p class="mb-0">While not exactly line</p>
+              </div> <!-- text -->
+            </div>
+          </li>
+          <li class="col-sm-6 col-lg-3 mb-4">
+            <div class="row align-items-center justify-content-center"> <!-- nested row -->
+              <div class="d-flex feature__iconContainer rounded-circle bg-white">
+                <i class="fas fa-map-marker-alt fa-lg m-auto" aria-hidden="true"></i>
+              </div> <!-- image -->
+              <div class="col-6 col-sm-9 col-md-7 col-lg-9 text-white">
+                <p class="text-uppercase mb-2">Track order</p>
+                <p class="mb-0">While not exactly line</p>
+              </div> <!-- text -->
+            </div>
+          </li>
+        </ul> <!-- feature list -->
+      </div> <!-- container -->
+    </section> <!-- feature section -->
+    
+    <footer class="footer py-5 text-white">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <span class="text-uppercase display-4">Femex</span>
+            <p class="my-3">
+              Et porro similique et odio dolores nihil. Voluptas numquam a eaque numquam. Qui numquam enim vel tenetur commodi voluptatum temporibus. Qui iste mollitia perspiciatis.
+            </p>
+            <p><small>
+              Powered by <span class="text-info">NasOrg</span>
+            </small></p>
+          </div>
+    
+          <div class="col-md-6 col-lg-4">
+            <form class="d-flex flex-column">
+              <p class="font-weight-bold">
+                Subscribe to our newsletter
+              </p>
+              <input type="email" class="subscriptionForm__input pb-2" aria-label="your email" placeholder="Enter Your E-mail">
+              <button type="submit" class="btn text-uppercase text-white px-0 mt-2 align-self-end subscriptionForm__button">Subscribe</button>
+              <p>Payment Methods</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
